@@ -24,8 +24,13 @@
 
 /* The typing effect */
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
 }
 
 /* The typewriter cursor effect
@@ -64,18 +69,24 @@ html {
     margin-top: 11%;
 }
 
+#about h1 {
+    margin-bottom: 3%;
+}
+
 #skills {
     padding: 5% 10% 5% 10%;
+
     display: grid;
-    grid-template-areas: 
-    'title title title title'
-    'softwareIcon typingIcon workingIcon educationIcon'
-    'languages other bcit ubc';
-    grid-gap: 10px;
+    grid-template-areas:
+        'title title title title'
+        'softwareIcon typingIcon workingIcon educationIcon'
+        'languages other bcit ubc';
+    grid-gap: 20px;
 }
 
 #skills h1 {
     grid-area: title;
+    margin-bottom: 3%;
 }
 
 #softwareIcon {
@@ -122,8 +133,57 @@ html {
     padding: 5% 10% 5% 10%;
     background-color: #696362;
     color: #ffffff;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+#cstbuddyImg {
+    grid-column: 1 / span 1;
+    margin-top: 5%;
+}
+
+#cstbuddy {
+    width: 100%;
+}
+
+#cstbuddyText {
+    grid-column: 2 / span 1;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+#cstbuddyText a {
+    color: white;
 }
 
 #contact {
     padding: 5% 10% 5% 10%;
+}
+
+#contact h1 {
+    padding-bottom: 3%;
+}
+
+.fa {
+    padding-top: 7px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border: solid black 3px;
+}
+
+.fa:hover {
+    opacity: 0.8;
+  }
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    color: black;
 }
