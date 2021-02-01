@@ -5,6 +5,7 @@
     text-align: center;
     font-family: 'Anonymous Pro', monospace;
     font-size: 3vw;
+    color: #ffffff;
 
 
     overflow: hidden;
@@ -51,6 +52,10 @@ html {
     float: right;
 }
 
+body {
+    background-color: #0B0C10;
+}
+
 #skiing {
     width: 600px;
     height: auto;
@@ -64,8 +69,7 @@ html {
 
 #about {
     padding: 5% 10% 5% 10%;
-    background-color: #696362;
-    color: #ffffff;
+    background-color: #c5c6c7;
     margin-top: 11%;
 }
 
@@ -75,12 +79,15 @@ html {
 
 #skills {
     padding: 5% 10% 5% 10%;
+    background-color: #b1a296;
 
     display: grid;
     grid-template-areas:
         'title title title title'
-        'softwareIcon typingIcon workingIcon educationIcon'
-        'languages other bcit ubc';
+        'softwareIcon typingIcon databaseIcon workflowIcon'
+        'languages tools database workflow'
+        'workingIcon workingIcon educationIcon educationIcon'
+        'bcit bcit ubc ubc';
     grid-gap: 20px;
 }
 
@@ -101,6 +108,18 @@ html {
     grid-area: typingIcon;
 }
 
+#databaseIcon {
+    width: 100px;
+    height: auto;
+    grid-area: databaseIcon;
+}
+
+#workflowIcon {
+    width: 100px;
+    height: auto;
+    grid-area: workflowIcon;
+}
+
 #workingIcon {
     width: 100px;
     height: auto;
@@ -117,8 +136,16 @@ html {
     grid-area: languages;
 }
 
-#other {
-    grid-area: other;
+#tools {
+    grid-area: tools;
+}
+
+#database {
+    grid-area: database;
+}
+
+#workflow {
+    grid-area: workflow;
 }
 
 #bcit {
@@ -131,8 +158,7 @@ html {
 
 #projects {
     padding: 5% 10% 5% 10%;
-    background-color: #696362;
-    color: #ffffff;
+    background-color: #c5c6c7;
     display: grid;
     grid-template-columns: 60% 40%;
 }
@@ -149,7 +175,7 @@ html {
 }
 
 .projectText a {
-    color: white;
+    color: black;
 }
 
 #projects a:hover {
@@ -162,6 +188,8 @@ html {
 
 #contact {
     padding: 5% 10% 5% 10%;
+    background-color: #1f2833;
+    color: #ffffff;
 }
 
 #contact h1 {
