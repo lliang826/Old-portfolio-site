@@ -159,19 +159,35 @@ body {
 #projects {
     padding: 5% 10% 5% 10%;
     background-color: #c5c6c7;
+
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-areas:
+        'title title'
+        'CSTBuddyImg CSTBuddyText'
+        'SpotUrVibeImg SpotUrVibeText';
+    grid-gap: 20px;
 }
 
-.projectImg {
-    grid-column: 1 / span 1;
-    margin-top: 10%;
+#projects h1 {
+    grid-area: 'title';
 }
 
-.projectText {
-    grid-column: 2 / span 1;
-    margin-top: 25%;
-    margin-left: 10%;
+#CSTBuddyImg {
+    grid-area: CSTBuddyImg;
+    margin-bottom: 10%;
+}
+
+#CSTBuddyText {
+    grid-area: CSTBuddyText;
+    margin-bottom: 10%;
+}
+
+#SpotUrVibeImg {
+    grid-area: SpotUrVibeImg;
+}
+
+#SpotUrVibeText {
+    grid-area: SpotUrVibeText;
 }
 
 .projectText a {
