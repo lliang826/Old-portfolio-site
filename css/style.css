@@ -25,13 +25,8 @@
 
 /* The typing effect */
 @keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
+    from { width: 0 }
+    to { width: 100% }
 }
 
 /* The typewriter cursor effect
@@ -46,10 +41,6 @@ html {
 
 .navbar-nav {
     width: 100%;
-}
-
-#four {
-    float: right;
 }
 
 body {
@@ -70,7 +61,6 @@ body {
 #about {
     padding: 5% 10% 5% 10%;
     background-color: #c5c6c7;
-    margin-top: 11%;
 }
 
 #about h1 {
@@ -200,6 +190,15 @@ body {
 
 .projectImg img {
     width: 100%;
+}
+
+#blog {
+    padding: 5% 10% 5% 10%;
+    color: #ffffff;
+}
+
+#blog h1 {
+    padding-bottom: 3%;
 }
 
 #contact {
