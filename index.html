@@ -24,11 +24,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" href="index.html">Home</a>
-                <a class="nav-item nav-link" href="about.html">About Me</a>
-                <a class="nav-item nav-link" href="projects.html">Projects</a>
-                <a class="nav-item nav-link" href="blog.html">Blog</a>
-                <a class="nav-item nav-link" href="contact.html">Contact Me</a>
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#about">About Me</a>
+                <a class="nav-item nav-link" href="#skills">Skills</a>
+                <a class="nav-item nav-link" href="#projects">Projects</a>
+                <a class="nav-item nav-link" id="four" href="#contact">Contact Me</a>
             </div>
         </div>
     </nav>
@@ -37,6 +37,137 @@
     <div id="welcome">
         <img src="img/skiing.jpg" id="skiing" alt="Skiing">
         <h1>Hi there! My name is Lawrence Liang.</h1>
+    </div>
+
+
+    <div id="about">
+        <h1>About Me</h1>
+        <p>I am currently a Co-op student in the Computer Systems Technology program at 
+            BCIT and I am located in Burnaby, British Columbia.
+            <br><br>
+            I enjoy coding in Java and I also have experience with C, Git, SQL, and 
+            other technologies. In addition, I have a Bachelor of Science in Combined 
+            Major in Science from UBC, where I focused on Computer Science, Chemistry, 
+            and Environmental Sciences.
+            <br><br>
+            In my spare time, my interests include golfing, playing the piano, and hiking!
+        </p>
+    </div>
+
+
+    <div id="skills">
+        <h1>Skills and Education</h1>
+
+        <!-- Icons from uxwing.com -->
+        <img src="img/software-development.svg" id="softwareIcon" alt="Programming Icon">
+        <img src="img/typing.svg" id="typingIcon" alt="Typing Icon">
+        <img src="img/working-on-laptop.svg" id="workingIcon" alt="Working on Laptop Icon">
+        <img src="img/education.svg" id="educationIcon" alt="Education Icon">
+        <img src="img/database-setting.svg" id="databaseIcon" alt="Database Icon">
+        <img src="img/project-work.svg" id="workflowIcon" alt="Workflow Icon">
+
+        <div id="languages">
+            <h3><u>Languages</u></h3>
+            <h5>Java</h5>
+            <h5>C</h5>
+            <h5>JavaScript</h5>
+            <h5>MATLAB</h5>
+        </div>
+        <div id="tools">
+            <h3><u>Tools</u></h3>
+            <h5>HTML</h5>
+            <h5>CSS</h5>
+        </div>
+        <div id="database">
+            <h3><u>Database</u></h3>
+            <h5>SQL</h5>
+            <h5>Firebase</h5>
+        </div>
+        <div id="workflow">
+            <h3><u>Workflow</u></h3>
+            <h5>Git</h5>
+            <h5>Github</h5>
+            <h5>Unit Testing</h5>
+            <h5>Agile</h5>
+        </div>
+        <div id="bcit">
+            <h3><u>Computer Systems Technology Diploma</u></h3>
+            <h5>British Columbia Institute of Technology</h5>
+            <h5>Currently in the Co-op program</h5>
+            <h5>Class of 2022</h5>
+        </div>
+        <div id="ubc">
+            <h3><u>Bachelor of Science, Combined Major in Science</u></h3>
+            <h5>University of British Columbia</h5>
+            <h5>Focus areas: Computer Science, Chemistry, Earth and Ocean Sciences</h5>
+            <h5>Class of 2020</h5>
+        </div>
+    </div>
+
+
+    <div id="projects">
+        <h1>Projects</h1>
+        <div class="projectImg" id="CSTBuddyImg">
+            <a href="https://github.com/lliang826/COMP1800" target="_blank">
+                <img src="img/CSTBuddy.PNG" id="cstbuddy" alt="CST Buddy">
+            </a>
+        </div>
+        <div class="projectText" id="CSTBuddyText">
+            <h3><a href="https://github.com/lliang826/COMP1800" target="_blank">
+                <u>CST Buddy</u>
+            </a></h3>
+            <br>
+            <h5>HTML / CSS / JavaScript / Firebase / Bootstrap</h5>
+            <br>
+            <p>
+                Developed in a group of three for my COMP 1800 Projects 1 class. CST Buddy is a chatbot web 
+                application that allows users to search for information related to the BCIT CST
+                program. Users can search from various topics to receive a short summary and a link for more 
+                information.
+                <br><br>
+                I was responsible for creating chatbot responses, which pulled information from Firebase 
+                based on user input, and hosting the app onto Firebase. I also helped create search lists,
+                which returned a list of topics based on views or likes.
+                <br><br>
+                I also designed the homepage, and I had to do multiple things to make the application 
+                user-friendly and intuitive. For example, I created an error case to handle any illegal inputs
+                and a set of instructions at the bottom of the page.
+            </p>
+        </div>
+        <div class="projectImg" id="SpotUrVibeImg">
+            <a href="https://github.com/lliang826/SpotUrVibe" target="blank">
+                <img src="img/SpotUrVibe2.PNG" id="spotUrVibe" alt="SpotUrVibe">
+            </a>
+        </div>
+        <div class="projectText" id="SpotUrVibeText">
+            <h3><a href="https://github.com/lliang826/SpotUrVibe" target="_blank">
+                <u>SpotUrVibe</u>
+            </a></h3>
+            <br>
+            <h5>HTML / CSS / JavaScript / Firebase / jQuery / Bootstrap</h5>
+            <br>
+            <p>
+                Developed in a group of four for nwHacks 2021. SpotUrVibe is a social web application that matches
+                users based on their musical artist preferences, then allows the matched users to share playlists
+                or individual songs and send messages within the application.
+                <br><br>
+                I was responsible for the front-end development of the signup and matching pages, and since my
+                team and I drew inspiration from Spotify's design, I used the same green and black colors. The
+                webpages were made with HTML, CSS, and Bootstrap. I also contributed to the back-end development
+                of the messaging function and pushing information to Firebase.
+                <br><br>
+                This was my first time doing a hackathon and I found the experience extremely rewarding and fun!
+            </p>
+        </div>
+    </div>
+
+    
+    <div id="contact">
+        <h1>Contact Me</h1>
+        <h5>Feel free to email me at <b>lliang35@my.bcit.ca!</b></h5>
+        <a href="https://www.linkedin.com/in/lawrence-liang/" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://github.com/lliang826" target="blank" class="fa fa-github"></a>
+
     </div>
 
 
