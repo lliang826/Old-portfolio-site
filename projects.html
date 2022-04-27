@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>About Me</title>
+
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Bootstrap nav bar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Lawrence Liang</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="about.html">About Me</a>
+                <a class="nav-item nav-link" href="projects.html">Projects</a>
+                <a class="nav-item nav-link" href="blog.html">Blog</a>
+                <a class="nav-item nav-link" href="contact.html">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="projects">
+        <h1>Projects</h1>
+        <div class="projectImg" id="CSTBuddyImg">
+            <a href="https://github.com/lliang826/COMP1800" target="_blank">
+                <img src="img/CSTBuddy.PNG" id="cstbuddy" alt="CST Buddy">
+            </a>
+        </div>
+        <div class="projectText" id="CSTBuddyText">
+            <h3><a href="https://github.com/lliang826/COMP1800" target="_blank">
+                <u>CST Buddy</u>
+            </a></h3>
+            <br>
+            <h5>HTML / CSS / JavaScript / Firebase / Bootstrap</h5>
+            <br>
+            <p>
+                Developed in a group of three for my COMP 1800 Projects 1 class. CST Buddy is a chatbot web 
+                application that allows users to search for information related to the BCIT CST
+                program. Users can search from various topics to receive a short summary and a link for more 
+                information.
+                <br><br>
+                I was responsible for creating chatbot responses, which pulled information from Firebase 
+                based on user input, and hosting the app onto Firebase. I also helped create search lists,
+                which returned a list of topics based on views or likes.
+                <br><br>
+                I also designed the homepage, and I had to do multiple things to make the application 
+                user-friendly and intuitive. For example, I created an error case to handle any illegal inputs
+                and a set of instructions at the bottom of the page.
+            </p>
+        </div>
+        <div class="projectImg" id="SpotUrVibeImg">
+            <a href="https://github.com/lliang826/SpotUrVibe" target="blank">
+                <img src="img/SpotUrVibe2.PNG" id="spotUrVibe" alt="SpotUrVibe">
+            </a>
+        </div>
+        <div class="projectText" id="SpotUrVibeText">
+            <h3><a href="https://github.com/lliang826/SpotUrVibe" target="_blank">
+                <u>SpotUrVibe</u>
+            </a></h3>
+            <br>
+            <h5>HTML / CSS / JavaScript / Firebase / jQuery / Bootstrap</h5>
+            <br>
+            <p>
+                Developed in a group of four for nwHacks 2021. SpotUrVibe is a social web application that matches
+                users based on their musical artist preferences, then allows the matched users to share playlists
+                or individual songs and send messages within the application.
+                <br><br>
+                I was responsible for the front-end development of the signup and matching pages, and since my
+                team and I drew inspiration from Spotify's design, I used the same green and black colors. The
+                webpages were made with HTML, CSS, and Bootstrap. I also contributed to the back-end development
+                of the messaging function and pushing information to Firebase.
+                <br><br>
+                This was my first time doing a hackathon and I found the experience extremely rewarding and fun!
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
